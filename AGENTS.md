@@ -1,5 +1,8 @@
 # 旅遊安排 Guideline
 
+- This workspace contains Chinese Markdown files. When reading them in PowerShell, use UTF-8 explicitly to avoid mojibake:
+  `[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Get-Content -Raw -Encoding UTF8 -LiteralPath 'path'`
+
 > 目的：在決定行程前，先用同一套標準檢查天氣、住宿 CP 值、素食選擇與交通可行性，避免只看景點清單而忽略實際體感與移動成本。
 
 ## 1. 天氣觀察
